@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mí</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <section class="nav-logo-container">
+                <a href="index.html"><img src="img/logo.png" alt="Logo de mi blog"></a>
+            </section>
+            <section class="profile-link">
+                <a href="perfil.html"><img src="img/icons/perfil.png" alt="">Sobre mí</a>
+                <a href="familia.html"><img src="img/icons/familia.png" alt="">Familia</a>
+                <a href="intereses.html"><img src="img/icons/intereses.png" alt="">Intereses</a>
+                <a href="contacto.html"><img src="img/icons/contacto.png" alt="">Contacto</a>
+            </section>
+        </nav>
+    </header>
+    <main>
+        <section class="main-contact-container">
+            <div class="grid-container contact-container">
+                <div class="contact-info-container">
+                    <h2>Mándame un mensaje</h2>
+                    <p>
+                        Odeth Luna Huaccachi <br>
+                        Av. Los Rosales 251 - El Agustino <br>
+                        Cel. 989453338 <br>
+                        odethlh@gmail.com <br>
+                    </p>
+                </div>
+                <div class="form-container">
+                    <form class="row g-3">
+                        <div class="col-12">
+                            <label for="inputNombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="inputNombre">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputApellido" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="inputApellido">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputEmail" class="form-label">Correo</label>
+                            <input type="email" class="form-control" id="inputEmail">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputCelular" class="form-label">Celular</label>
+                            <input type="text" class="form-control" id="inputCelular" maxlength="9" pattern="[0-9]+">
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Deja un mensaje" id="floatingMensaje" style="height: 100px"></textarea>
+                            <label for="floatingMensaje">Mensaje</label>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="contact-game-container">
+            <div class="game-container">
+                <h3>Antes de irte, juega una partida de Piedra, Papel y Tijeras</h3>
+                <p>Solo tienes una oportunidad. El mejor de tres gana!</p>
+                <button id="boton_jugar">Jugar</button>
+                <p id="mensaje"></p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Página web desarrollada por Odeth Luna</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src= "/js/juego.js"></script>
+</body>
+</html>

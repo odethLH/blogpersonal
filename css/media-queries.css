@@ -1,0 +1,19 @@
+@media (max-width: 1043px) { /*cuando la pantalla llegue a 900px los estilos indicados se aplican*/
+    .profile-second.container .second-container {
+        grid-template-rows: 2fr;
+    }
+
+    .img-second-container {
+        grid-row: 2;
+    }
+
+    .info-second-container { 
+        grid-row: 1;
+    }
+
+    .profile-main-container .profile-container {
+        display: block;
+    }
+}
+
+
